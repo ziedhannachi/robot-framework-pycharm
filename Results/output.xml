@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.6.6 on win32)" generated="20220624 23:50:15.637" rpa="false" schemaversion="3">
+<suite id="s1" name="Formulaire" source="C:\Users\abdes\PycharmProjects\pycharm1\Tests\Formulaire.robot">
+<test id="s1-t1" name="[Documentation]" line="12">
+<kw name="setup" library="Common">
+<arg>${url3}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220624 23:50:15.905" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<status status="PASS" starttime="20220624 23:50:15.905" endtime="20220624 23:50:18.081"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220624 23:50:18.081" endtime="20220624 23:50:18.227"/>
+</kw>
+<status status="PASS" starttime="20220624 23:50:15.905" endtime="20220624 23:50:18.227"/>
+</kw>
+<kw name="Je saisis Fist Name et Last Name" library="FormulairePage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FisrtName}</arg>
+<arg>REJEB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220624 23:50:18.229" level="INFO">Typing text 'REJEB' into text field 'firstName'.</msg>
+<status status="PASS" starttime="20220624 23:50:18.228" endtime="20220624 23:50:18.328"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220624 23:50:18.328" level="FAIL">Keyword 'BuiltIn.Sleep' expected 1 to 2 arguments, got 0.</msg>
+<status status="FAIL" starttime="20220624 23:50:18.328" endtime="20220624 23:50:18.328"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>${FisrtName}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220624 23:50:18.328" endtime="20220624 23:50:18.328"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${name}</arg>
+<arg>REJEB</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20220624 23:50:18.328" endtime="20220624 23:50:18.328"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LastName}</arg>
+<arg>ROUA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220624 23:50:18.328" endtime="20220624 23:50:18.328"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>${LastName}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220624 23:50:18.328" endtime="20220624 23:50:18.328"/>
+</kw>
+<status status="FAIL" starttime="20220624 23:50:18.227" endtime="20220624 23:50:18.328"/>
+</kw>
+<status status="FAIL" starttime="20220624 23:50:15.896" endtime="20220624 23:50:18.328">Keyword 'BuiltIn.Sleep' expected 1 to 2 arguments, got 0.</status>
+</test>
+<doc>Page Object in Robot Framework</doc>
+<status status="FAIL" starttime="20220624 23:50:15.639" endtime="20220624 23:50:18.328"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Formulaire">Formulaire</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

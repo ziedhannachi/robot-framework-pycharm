@@ -1,0 +1,5 @@
+url = "https://opensource-demo.orangehrmlive.com/"
+browser = "Chrome"
+url1 = "https://demoqa.com/alerts"
+url2 = "https://demo.guru99.com/test/radio.html"
+url3 = "https://demoqa.com/automation-practice-form"

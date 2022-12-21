@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.6.6 on win32)" generated="20221125 19:18:38.485" rpa="false" schemaversion="3">
+<suite id="s1" name="T" source="C:\Users\abdes\PycharmProjects\pycharm1\firstProject\t.robot">
+<test id="s1-t1" name="LoginOrangeHrm" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221125 19:18:38.814" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221125 19:18:43.081" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20221125 19:18:43.081" endtime="20221125 19:18:43.082"/>
+</kw>
+<msg timestamp="20221125 19:18:43.083" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 107.0.5304.107 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" starttime="20221125 19:18:38.814" endtime="20221125 19:18:43.131"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20221125 19:18:43.132" endtime="20221125 19:18:43.132"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221125 19:18:43.133" endtime="20221125 19:18:43.133"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221125 19:18:43.133" endtime="20221125 19:18:43.133"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221125 19:18:43.134" endtime="20221125 19:18:43.134"/>
+</kw>
+<status status="FAIL" starttime="20221125 19:18:38.811" endtime="20221125 19:18:43.135">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 107.0.5304.107 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<status status="FAIL" starttime="20221125 19:18:38.487" endtime="20221125 19:18:43.136"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="T">T</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
